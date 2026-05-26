@@ -52,13 +52,13 @@
 -------------------------------------------------------------- */
 .header-top {
   padding-left: 209px;
-  background-color: #EBEBEB;
+  background-color: #0A1F44;
 }
 .header-top .header-top-wrap .header-top-right ul li:not(:last-child) {
   margin-right: 36px;
 }
 .header-top .header-top-wrap .header-top-right ul li i {
-  color:#ff1421;
+  color:#fde601;
   margin-right: 8px;
   font-size: 15px;
 }
@@ -87,14 +87,14 @@
   margin-right: 18px;
 }
 .header-top .header-top-wrap .header-top-left .follow-social ul {
-  background-color: #DCDCDC;
+  background-color: #0A1F44;
   padding: 8px 30px;
 }
 .header-top .header-top-wrap .header-top-left .follow-social ul li:not(:last-child) {
   margin-right: 22px;
 }
 .header-top .header-top-wrap .header-top-left .follow-social ul li a {
-  color: rgba(0, 0, 0, 0.72);
+  color: rgb(255, 255, 255);
 }
 .header-top .header-top-wrap .header-top-left .follow-social ul li a:hover {
   color: #ff1421;
@@ -160,7 +160,7 @@
 }
 
 .header-sidebar {
-  background-color: #ff1421;
+  background-color: #fde601;
   padding: 30px 60px;
 }
 .header-sidebar i {
@@ -464,7 +464,7 @@
 .main-header .main-menu .navigation > li:hover > a,
 .main-header .main-menu .navigation > li.current > a {
   opacity: 1;
-  color: #ff1421;
+  color:#fde601;
 }
 
 .main-header .main-menu .navigation > li > ul {
@@ -990,7 +990,7 @@
   color: #FFFFFF;
 }
 .header-style1 .header-top .header-top-right ul li span {
-  color: #FFFFFF;
+  color: #030000;
 }
 .header-style1 .header-top .header-top-left .booking {
   color: #FFFFFF;
@@ -1326,7 +1326,7 @@
   border-radius: 5px;
   border: none;
   overflow: hidden;
-  background: #ff1421;
+  background: #FFE600;
   color: #FFFFFF;
 }
 .btn-main:hover {
@@ -5260,7 +5260,7 @@
   margin-bottom: 11px;
 }
 .footer-style1 .footer-main .footer-logo .footer-info li i {
-  color: #ff1421;
+  color: #fde601;
   margin-right: 12px;
   font-size: 17px;
 }
@@ -9763,7 +9763,7 @@ input[type=submit]:hover {
 }
 
 .text-main {
-  color: #ff1421 !important;
+  color: #FFE600 !important;
 }
 
 .font-yes {
@@ -11915,3 +11915,21 @@ body .dribbble img {
 }
 
 
+.header-top-right ul li span,
+.header-top-right ul li i {
+    color: #ffffff;
+}
+
+.icon-19 {
+    color: #fde601 !important;
+}
+
+.header-top-left .booking span,
+.follow-social span,
+.follow-social ul li a i {
+    color: #ffffff !important;
+}
+
+.main-header .main-menu .navigation > li > a {
+    text-transform: uppercase;
+}

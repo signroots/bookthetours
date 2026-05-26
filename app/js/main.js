@@ -284,38 +284,3 @@ window.addEventListener('scroll', function () {
     flyAb.classList.remove('hide');
   }
 });
-document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".populer-activities", {
-    loop: true,
-    slidesPerView: 3,
-    spaceBetween: 20,
-
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: false,
-    },
-
-    speed: 800,
-
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-  });
-});
