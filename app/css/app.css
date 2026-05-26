@@ -160,7 +160,7 @@
 }
 
 .header-sidebar {
-  background-color: #fde601;
+  background-color: #e5d00d;
   padding: 30px 60px;
 }
 .header-sidebar i {
@@ -1326,7 +1326,7 @@
   border-radius: 5px;
   border: none;
   overflow: hidden;
-  background: #FFE600;
+  background: #e5d00d;
   color: #000000;
 }
 .btn-main:hover {
@@ -3947,7 +3947,7 @@
   box-shadow: 0px 15px 10px 0px rgba(242, 242, 242, 0.18);
 }
 .contact-us .box-contact .icon {
-  color: #ff1421;
+  color: #e5d00d;
   height: 71px;
 }
 .contact-us .box-contact span {
@@ -5260,7 +5260,7 @@
   margin-bottom: 11px;
 }
 .footer-style1 .footer-main .footer-logo .footer-info li i {
-  color: #fde601;
+  color: #e5d00d;
   margin-right: 12px;
   font-size: 17px;
 }
@@ -9763,7 +9763,7 @@ input[type=submit]:hover {
 }
 
 .text-main {
-  color: #FFE600 !important;
+  color: #e5d00d !important;
 }
 
 .font-yes {
@@ -11932,4 +11932,422 @@ body .dribbble img {
 
 .main-header .main-menu .navigation > li > a {
     text-transform: uppercase;
+}
+
+
+/* Main Tour Images */
+.tour-image{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* Popup Background */
+.img-popup{
+    display:none;
+    position:fixed;
+    z-index:999999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+
+    justify-content:center;
+    align-items:center;
+}
+
+/* Popup Image */
+.popup-img{
+    width:500px;
+    height:320px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Close Button */
+.close-popup{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+    z-index:9999999;
+}
+
+/* Section */
+.destination-section{
+    padding:80px 0;
+    background:#f3f3f3;
+}
+
+/* Grid */
+.destination-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+/* Card */
+.destination-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* Image */
+.destination-img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+    transition:0.4s;
+}
+
+.destination-card:hover .destination-img{
+    transform:scale(1.05);
+}
+
+/* Overlay */
+.destination-overlay{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1));
+}
+
+/* Content */
+.destination-content{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    z-index:2;
+}
+
+.destination-content span{
+    color:#fff;
+    font-size:22px;
+    font-family:cursive;
+}
+
+.destination-content h3{
+    color:#fff;
+    font-size:34px;
+    font-weight:700;
+    margin-top:5px;
+}
+
+/* Button */
+.book-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff9800;
+    color:#fff;
+    padding:8px 18px;
+    font-size:12px;
+    font-weight:700;
+    border-radius:4px;
+    z-index:2;
+}
+
+/* Popup */
+#destinationPopup{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    z-index:999999;
+
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Popup Image */
+#popupImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+/* Close */
+#popupClose{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:#fff;
+    font-size:50px;
+    cursor:pointer;
+}
+
+/* Responsive */
+@media(max-width:991px){
+
+    .destination-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .destination-grid{
+        grid-template-columns:1fr;
+    }
+
+    .destination-content h3{
+        font-size:24px;
+    }
+
+}
+
+
+
+/* ============================= */
+/* DESTINATION POPUP */
+/* ============================= */
+
+#destinationPopup{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.82);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 15px;
+}
+
+/* POPUP BOX */
+
+.popup-content{
+    width: 100%;
+    max-width: 720px;
+    background: #fff;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    animation: popupFade .35s ease;
+}
+
+/* CLOSE BUTTON */
+
+#popupClose{
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    color: #fff;
+    font-size: 34px;
+    z-index: 20;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* ============================= */
+/* TOP IMAGE */
+/* ============================= */
+
+.popup-top{
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+}
+
+#popupImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* IMAGE OVERLAY */
+
+.popup-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,.70),
+        rgba(0,0,0,.15)
+    );
+    display: flex;
+    align-items: center;
+    padding: 28px;
+}
+
+.popup-overlay-content{
+    max-width: 420px;
+    color: #fff;
+}
+
+/* BADGE */
+
+.popup-badge{
+    display: inline-block;
+    background: #ff970d;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+/* TITLE */
+
+#popupTitle{
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+/* SMALL TEXT */
+
+.popup-mini-desc{
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255,255,255,.92);
+}
+
+/* ============================= */
+/* DESCRIPTION SECTION */
+/* ============================= */
+
+.popup-bottom-wrap{
+    padding: 22px;
+}
+
+.popup-description-box{
+    width: 100%;
+}
+
+.popup-package-name{
+    font-size: 24px;
+    font-weight: 800;
+    color: #062B5B;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+/* DESCRIPTION */
+
+#popupDesc{
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+    max-width: 95%;
+}
+
+/* WHATSAPP BUTTON */
+
+#popupWhatsapp{
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: .3s;
+}
+
+#popupWhatsapp:hover{
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+#popupWhatsapp img{
+    width: 20px;
+    height: 20px;
+}
+
+/* ============================= */
+/* ANIMATION */
+/* ============================= */
+
+@keyframes popupFade{
+
+    from{
+        opacity: 0;
+        transform: scale(.94);
+    }
+
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media(max-width:768px){
+
+    .popup-top{
+        height: 220px;
+    }
+
+    .popup-overlay{
+        padding: 18px;
+    }
+
+    #popupTitle{
+        font-size: 24px;
+    }
+
+    .popup-mini-desc{
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .popup-bottom-wrap{
+        padding: 18px;
+    }
+
+    .popup-package-name{
+        font-size: 20px;
+    }
+
+    #popupDesc{
+        font-size: 13px;
+    }
+
+    #popupWhatsapp{
+        width: 100%;
+        font-size: 13px;
+    }
+
+}
+
+
+.popup-overlay-content{
+    display: none;
+}
+
+.popup-top {
+    position: relative;
+    height: 400px;
 }

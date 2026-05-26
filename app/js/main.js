@@ -284,3 +284,71 @@ window.addEventListener('scroll', function () {
     flyAb.classList.remove('hide');
   }
 });
+
+
+/**  ----------------------------------------------------------  */
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const cards = document.querySelectorAll(".destination-card");
+
+    const popup = document.getElementById("destinationPopup");
+
+    const popupImage = document.getElementById("popupImage");
+
+    const popupTitle = document.getElementById("popupTitle");
+
+    const popupBottomTitle = document.getElementById("popupBottomTitle");
+
+    const popupDesc = document.getElementById("popupDesc");
+
+    const popupWhatsapp = document.getElementById("popupWhatsapp");
+
+    const popupClose = document.getElementById("popupClose");
+
+    /* OPEN POPUP */
+
+    cards.forEach(function(card){
+
+        card.addEventListener("click", function(){
+
+            popup.style.display = "flex";
+
+            popupImage.src = card.dataset.popup;
+
+            popupTitle.innerText = card.dataset.title;
+
+            popupBottomTitle.innerText = card.dataset.title;
+
+            popupDesc.innerText = card.dataset.desc;
+
+            popupWhatsapp.href = card.dataset.link;
+
+        });
+
+    });
+
+    /* CLOSE BUTTON */
+
+    popupClose.addEventListener("click", function(){
+
+        popup.style.display = "none";
+
+    });
+
+    /* OUTSIDE CLICK CLOSE */
+
+    popup.addEventListener("click", function(e){
+
+        if(e.target === popup){
+
+            popup.style.display = "none";
+
+        }
+
+    });
+
+});
