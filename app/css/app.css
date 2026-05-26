@@ -12351,3 +12351,7 @@ body .dribbble img {
     position: relative;
     height: 400px;
 }
+
+.icon-19:before {
+    color: #e5d00d;
+}
