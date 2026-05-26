@@ -1081,7 +1081,7 @@
   line-height: 18.9px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: rgb(0, 0, 0) 2, 2)0, 0);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -10840,3 +10840,6 @@ body .dribbble img {
     height: auto !important;
 }
 
+.btn-main {
+    color: #000000 !important;
+}

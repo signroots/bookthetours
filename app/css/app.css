@@ -1327,7 +1327,7 @@
   border: none;
   overflow: hidden;
   background: #FFE600;
-  color: #FFFFFF;
+  color: #000000;
 }
 .btn-main:hover {
   background-color: #FF970D;
