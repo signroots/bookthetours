@@ -3947,7 +3947,7 @@
   box-shadow: 0px 15px 10px 0px rgba(242, 242, 242, 0.18);
 }
 .contact-us .box-contact .icon {
-  color: #e5d00d;
+  color: #c99700;
   height: 71px;
 }
 .contact-us .box-contact span {
@@ -5260,7 +5260,7 @@
   margin-bottom: 11px;
 }
 .footer-style1 .footer-main .footer-logo .footer-info li i {
-  color: #e5d00d;
+  color: #c99700;
   margin-right: 12px;
   font-size: 17px;
 }
@@ -9568,7 +9568,7 @@ input[type=submit] {
   line-height: 20px;
   text-transform: capitalize;
   color: #FFFFFF;
-  background-color: #ff1421;
+  background-color: rgb(229, 208, 13);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
